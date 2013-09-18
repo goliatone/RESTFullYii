@@ -11,6 +11,7 @@ env:
 
 before_script:
   - git clone --depth=1 https://github.com/yiisoft/yii.git yii
+  - echo pwd
   - cd ./starship/RestfullYii/tests
   #- ./travis/setup-mysql.sh
   #- ./travis/setup-psal.sh
