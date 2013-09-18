@@ -4,7 +4,7 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-//echo realpath(__DIR__ . '/../vendor'); exit();
+echo realpath(__DIR__ . '/../vendor');
 return array(
 	'basePath'=>dirname(__FILE__).'/../../../..',
 	'name'=>'RestfullYii Testing App',
