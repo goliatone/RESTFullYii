@@ -11,11 +11,11 @@ env:
 
 before_script:
   - git clone --depth=1 https://github.com/yiisoft/yii.git yii
-  - echo pwd
   - cd ./starship/RestfullYii/tests
+  - chmod a+x ./travis/*.sh
   #- ./travis/setup-mysql.sh
   #- ./travis/setup-psal.sh
-  #- sudo ./travis/setup.sh
+  - sudo ./travis/setup.sh
   - if [[ "$DB" == "pgsql" ]]; then psql -c "CREATE DATABASE restfullyii_test;" -U postgres; fi
   - if [[ "$DB" == "mysql" ]]; then mysql -e "CREATE DATABASE IF NOT EXISTS restfullyii_test;" -uroot; fi
 
